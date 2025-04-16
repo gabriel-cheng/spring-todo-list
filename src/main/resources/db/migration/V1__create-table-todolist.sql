@@ -1,5 +1,5 @@
 CREATE TABLE todoList(
-    taskId TEXT PRIMARY KEY UNIQUE NOT NULL,
-    taskName TEXT NOT NULL,
-    taskDescription TEXT NOT NULL
+    task_id TEXT PRIMARY KEY UNIQUE NOT NULL,
+    task_name TEXT NOT NULL,
+    task_description TEXT NOT NULL
 );

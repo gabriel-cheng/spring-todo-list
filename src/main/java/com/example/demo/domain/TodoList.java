@@ -12,26 +12,26 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Table(name="todo")
-@Entity(name="todo")
+@Table(name="todolist")
+@Entity(name="todolist")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(of="taskId")
+@EqualsAndHashCode(of="task_id")
 public class TodoList {
 
     @Id @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(name="taskid")
-    private String taskId;
+    @Column(name="task_id")
+    private String task_id;
     
-    private String taskName;
+    private String task_name;
 
-    private String taskDescription;
+    private String task_description;
 
     public TodoList(RequestTodo requestTodo) {
-        this.taskName = requestTodo.taskName();
-        this.taskDescription = requestTodo.taskDescription();
+        this.task_name = requestTodo.task_name();
+        this.task_description = requestTodo.task_description();
     }
 
 }

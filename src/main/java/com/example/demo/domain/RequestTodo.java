@@ -1,6 +1,6 @@
 package com.example.demo.domain;
 
 public record RequestTodo(
-    String taskName,
-    String taskDescription
+    String task_name,
+    String task_description
 ) { }
